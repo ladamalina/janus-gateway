@@ -66,6 +66,6 @@ RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	rm -rf /usr/src/janus
 
 EXPOSE 8088/tcp 8188/tcp
-EXPOSE 8188/udp 10000-11000/udp
+EXPOSE 8188/udp 20000-40000/udp
 
 CMD /var/janus/janus/bin/janus --nat-1-1=${DOCKER_IP}
