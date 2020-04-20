@@ -20,7 +20,10 @@ docker run -d -e "DOCKER_IP=<Public IP>" ladamalina/janus-gateway:latest
 
 You have to pass `DOCKER_IP` env variable and configure STUN server. Otherwise Janus server will fail to communicate through your NAT. [Read more about ICE](https://github.com/meetecho/janus-gateway/issues/90)
 
-You may want to change configuration files or record video meetings mounting it as volumes: `/var/janus/janus/etc`, `/var/janus/janus/data`.
+You may want to change configuration files or record video meetings mounting it as volumes:
+
+* `/var/janus/janus/etc`,
+* `/var/janus/janus/data`.
 
 By default ACL lists for http transport, admin api and websockets are empty and Janus does not perform any access control. For production you should configure firewall rules or reverse-proxy access control for ports `8088` and `8188`. Example:
 
