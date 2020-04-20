@@ -23,9 +23,7 @@ By default ACL lists for http transport, admin api and websockets are empty and 
 docker run -d \
 	-v `pwd`/data:/var/janus/janus/data \
 	-v `pwd`/etc:/var/janus/janus/etc \
-	-p 127.0.0.1:8088:8088/tcp \
-	-p 127.0.0.1:8188:8188/tcp \
-	-p 10000-11000:10000-11000/udp \
+	--network host \
 	-e "DOCKER_IP=<Public IP>" \
 	--restart=unless-stopped \
 	ladamalina/janus-gateway:latest
