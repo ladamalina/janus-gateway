@@ -2,10 +2,11 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* `latest`, `0.4.3-stretch-updated-dependencies-20180830` _[(0.4.3/debian9/updated-dependencies-20180830/Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/0.4.3/debian9/updated-dependencies-20180830/Dockerfile)_
-* `0.4.3-stretch` _[(0.4.3/debian9/stable/Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/0.4.3/debian9/stable/Dockerfile)_
-* `0.4.3-buster` – broken libnice 0.1.14 – _[(0.4.3/debian10/testing/Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/0.4.3/debian10/testing/Dockerfile)_
-* `0.4.2-stretch` _[(0.4.2/debian9/stable/Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/0.4.2/debian9/stable/Dockerfile)_
+* `latest`, `0.9.2-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.9.2-stretch/Dockerfile)_
+* `0.4.3-stretch-updated-dependencies-20180830` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.4.3-stretch-updated-dependencies-20180830/Dockerfile)_
+* `0.4.3-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.4.3-stretch/Dockerfile)_
+* `0.4.3-buster` – broken libnice 0.1.14 – _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.4.3-buster/Dockerfile)_
+* `0.4.2-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.4.2-stretch/Dockerfile)_
 
 ## How to use this image
 
