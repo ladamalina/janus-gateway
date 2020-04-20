@@ -17,7 +17,8 @@ RUN apt-get install -y \
 	fakeroot \
 	xutils \
 	lintian \
-	pbuilder
+	pbuilder \
+	libconfig-dev
 
 RUN apt-get install -y \
 	libmicrohttpd-dev \
@@ -45,21 +46,21 @@ RUN echo deb http://deb.debian.org/debian testing main >> /etc/apt/sources.list 
 	apt-cache policy libmicrohttpd-dev libnice-dev libssl-dev libopus-dev
 
 RUN apt-get install -y \
-	libmicrohttpd-dev=0.9.59-1 \
-	libjansson-dev=2.11-1 \
-	libcurl4-openssl-dev=7.61.0-1 \
-	libglib2.0-dev=2.56.1-2 \
-	libsrtp2-dev=2.2.0-1 \
-	libssl-dev=1.1.0h-4 \
-	libopus-dev=1.3~beta+20180518-1
+	libmicrohttpd-dev \
+	libjansson-dev \
+	libcurl4-openssl-dev \
+	libglib2.0-dev \
+	libsrtp2-dev \
+	libssl-dev \
+	libopus-dev
 
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
-	wget -c https://github.com/meetecho/janus-gateway/archive/v0.4.3.tar.gz && \
-	tar -xzf v0.4.3.tar.gz && \
-	cd janus-gateway-0.4.3 && \
+	wget -c https://github.com/meetecho/janus-gateway/archive/v0.9.2.tar.gz && \
+	tar -xzf v0.9.2.tar.gz && \
+	cd janus-gateway-0.9.2 && \
 	sh autogen.sh && \
 	./configure --prefix=/var/janus/janus --enable-post-processing --disable-rabbitmq --disable-data-channels && \
 	make && make install && make configs && \
