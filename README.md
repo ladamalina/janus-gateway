@@ -2,7 +2,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* `latest`, `0.9.2-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.9.2-buster/Dockerfile)_
+* `latest`, `0.9.3-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.9.3-buster/Dockerfile)_
+* `0.9.2-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.9.2-buster/Dockerfile)_
 * `0.9.2-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.9.2-stretch/Dockerfile)_
 * `0.8.2-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.8.2-buster/Dockerfile)_
 * `0.8.2-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.8.2-stretch/Dockerfile)_
