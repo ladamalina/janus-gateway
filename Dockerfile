@@ -58,9 +58,9 @@ RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
-	wget -c https://github.com/meetecho/janus-gateway/archive/v0.9.3.tar.gz && \
-	tar -xzf v0.9.3.tar.gz && \
-	cd janus-gateway-0.9.3 && \
+	wget -c https://github.com/meetecho/janus-gateway/archive/v0.9.4.tar.gz && \
+	tar -xzf v0.9.4.tar.gz && \
+	cd janus-gateway-0.9.4 && \
 	sh autogen.sh && \
 	./configure --prefix=/var/janus/janus --enable-post-processing --disable-rabbitmq --disable-data-channels && \
 	make && make install && make configs && \
