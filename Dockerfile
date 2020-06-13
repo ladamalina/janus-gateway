@@ -3,62 +3,58 @@ FROM debian:stretch
 LABEL maintainer="Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>"
 LABEL description="Provides an image with Janus Gateway"
 
-RUN apt-get update
-
-RUN apt-get install -y \
-	git \
-	build-essential \
-	autoconf \
-	automake \
-	autotools-dev \
-	dh-make \
-	debhelper \
-	devscripts \
-	fakeroot \
-	xutils \
-	lintian \
-	pbuilder \
-	libconfig-dev \
-	libmicrohttpd-dev \
-	libjansson-dev \
-	libnice-dev \
-	libssl-dev \
-	libsrtp2-dev \
-	libsofia-sip-ua-dev \
-	libglib2.0-dev \
-	libopus-dev \
-	libogg-dev \
-	pkg-config \
-	gengetopt \
-	libtool \
-	automake \
-	cmake
-
 RUN echo deb http://deb.debian.org/debian stable main contrib non-free >> /etc/apt/sources.list && \
-	apt-get update
+	apt-get update && \
+	apt-get install -y \
+		git \
+		build-essential \
+		autoconf \
+		automake \
+		autotools-dev \
+		dh-make \
+		debhelper \
+		devscripts \
+		fakeroot \
+		xutils \
+		lintian \
+		pbuilder \
+		libconfig-dev \
+		libmicrohttpd-dev \
+		libjansson-dev \
+		libnice-dev \
+		libssl-dev \
+		libsrtp2-dev \
+		libsofia-sip-ua-dev \
+		libglib2.0-dev \
+		libopus-dev \
+		libogg-dev \
+		pkg-config \
+		gengetopt \
+		libtool \
+		automake \
+		cmake \
+		libmicrohttpd-dev \
+		libjansson-dev \
+		libcurl4-openssl-dev \
+		libglib2.0-dev \
+		libssl-dev \
+		libopus-dev \
+		libavutil-dev \
+		libavcodec-dev \
+		libavformat-dev \
+		libwebsockets-dev \
+		liblua5.3-dev && \
+	rm -rf /var/lib/apt/lists/*
 
-# install updated version of libsrtp
-RUN wget https://github.com/cisco/libsrtp/archive/v2.3.0.tar.gz && \
+RUN mkdir -p /usr/src/libsrtp && \
+	cd /usr/src/libsrtp && \
+	wget https://github.com/cisco/libsrtp/archive/v2.3.0.tar.gz && \
 	tar xfv v2.3.0.tar.gz && \
 	cd libsrtp-2.3.0 && \
 	./configure --prefix=/usr --enable-openssl && \
 	make shared_library && \
-	sudo make install
-
-RUN apt-get install -y \
-	libmicrohttpd-dev \
-	libjansson-dev \
-	libcurl4-openssl-dev \
-	libglib2.0-dev \
-	libssl-dev \
-	libopus-dev \
-	libavutil-dev \
-	libavcodec-dev \
-	libavformat-dev \
-	libwebsockets-dev \
-	liblua5.3-dev
-
-RUN rm -rf /var/lib/apt/lists/*
+	make install && \
+	rm -rf /usr/src/libsrtp
 
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
