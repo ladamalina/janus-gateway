@@ -18,9 +18,7 @@ RUN apt-get install -y \
 	xutils \
 	lintian \
 	pbuilder \
-	libconfig-dev
-
-RUN apt-get install -y \
+	libconfig-dev \
 	libmicrohttpd-dev \
 	libjansson-dev \
 	libnice-dev \
@@ -34,35 +32,41 @@ RUN apt-get install -y \
 	gengetopt \
 	libtool \
 	automake \
-	cmake \
-	libwebsockets-dev \
-	libavutil-dev \
-	libavcodec-dev \
-	libavformat-dev \
-	liblua5.3-dev
+	cmake
 
-RUN echo deb http://deb.debian.org/debian testing main >> /etc/apt/sources.list && \
-	apt-get update && \
-	apt-cache policy libmicrohttpd-dev libnice-dev libssl-dev libopus-dev
+RUN echo deb http://deb.debian.org/debian stable main contrib non-free >> /etc/apt/sources.list && \
+	apt-get update
+
+# install updated version of libsrtp
+RUN wget https://github.com/cisco/libsrtp/archive/v2.3.0.tar.gz && \
+	tar xfv v2.3.0.tar.gz && \
+	cd libsrtp-2.3.0 && \
+	./configure --prefix=/usr --enable-openssl && \
+	make shared_library && \
+	sudo make install
 
 RUN apt-get install -y \
 	libmicrohttpd-dev \
 	libjansson-dev \
 	libcurl4-openssl-dev \
 	libglib2.0-dev \
-	libsrtp2-dev \
 	libssl-dev \
-	libopus-dev
+	libopus-dev \
+	libavutil-dev \
+	libavcodec-dev \
+	libavformat-dev \
+	libwebsockets-dev \
+	liblua5.3-dev
 
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
-	wget -c https://github.com/meetecho/janus-gateway/archive/v0.10.0.tar.gz && \
-	tar -xzf v0.10.0.tar.gz && \
-	cd janus-gateway-0.10.0 && \
+	wget -c https://github.com/meetecho/janus-gateway/archive/v0.10.1.tar.gz && \
+	tar -xzf v0.10.1.tar.gz && \
+	cd janus-gateway-0.10.1 && \
 	sh autogen.sh && \
-	./configure --prefix=/var/janus/janus --enable-post-processing --disable-rabbitmq --disable-data-channels && \
+	./configure --prefix=/var/janus/janus --enable-post-processing --disable-rabbitmq --disable-data-channels --disable-aes-gcm && \
 	make && make install && make configs && \
 	rm -rf /usr/src/janus
 
