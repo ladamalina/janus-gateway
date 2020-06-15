@@ -12,7 +12,7 @@
 * `0.8.1-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.8.1-stretch/Dockerfile)_, `0.8.1-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.8.1-buster/Dockerfile)_
 * `0.8.0-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.8.0-stretch/Dockerfile)_, `0.8.0-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.8.0-buster/Dockerfile)_
 * `0.7.6-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.7.6-stretch/Dockerfile)_, `0.7.6-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.7.6-buster/Dockerfile)_
-* `0.7.5-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.7.5-stretch/Dockerfile)_, `0.7.5-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.7.5-buster/Dockerfile)_
+* `0.7.5-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.7.5-stretch/Dockerfile)_
 * `0.7.4-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.7.4-stretch/Dockerfile)_, `0.7.4-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.7.4-buster/Dockerfile)_
 * `0.6.3-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.6.3-stretch/Dockerfile)_, `0.6.3-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.6.3-buster/Dockerfile)_
 * `0.5.0-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.5.0-stretch/Dockerfile)_, `0.5.0-buster` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.5.0-buster/Dockerfile)_
