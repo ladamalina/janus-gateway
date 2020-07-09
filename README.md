@@ -2,8 +2,9 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* `latest`, `0.10.2-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/Dockerfile)_
-* `0.10.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.2-bullseye/Dockerfile)_
+* `latest`, `0.10.3-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/Dockerfile)_
+* `0.10.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.3-bullseye/Dockerfile)_
+* `0.10.2-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.2-stretch/Dockerfile)_, `0.10.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.2-bullseye/Dockerfile)_
 * `0.10.1-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.1-stretch/Dockerfile)_, `0.10.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.1-bullseye/Dockerfile)_
 * `0.10.0-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.0-stretch/Dockerfile)_, `0.10.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.10.0-bullseye/Dockerfile)_
 * `0.9.5-stretch` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.9.5-stretch/Dockerfile)_
