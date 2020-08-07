@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:bullseye
 
 LABEL maintainer="Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>"
 LABEL description="Provides an image with Janus Gateway"
@@ -58,9 +58,9 @@ RUN mkdir -p /usr/src/libsrtp && \
 
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
-	wget -c https://github.com/meetecho/janus-gateway/archive/v0.10.3.tar.gz && \
-	tar -xzf v0.10.3.tar.gz && \
-	cd janus-gateway-0.10.3 && \
+	wget -c https://github.com/meetecho/janus-gateway/archive/v0.10.4.tar.gz && \
+	tar -xzf v0.10.4.tar.gz && \
+	cd janus-gateway-0.10.4 && \
 	sh autogen.sh && \
 	./configure --prefix=/var/janus/janus --enable-post-processing --disable-rabbitmq --disable-data-channels --disable-aes-gcm && \
 	make && make install && make configs && \
