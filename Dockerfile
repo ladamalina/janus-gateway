@@ -5,7 +5,7 @@ LABEL description="Provides an image with Janus Gateway"
 
 RUN echo deb http://deb.debian.org/debian stable main contrib non-free >> /etc/apt/sources.list && \
 	apt-get update && \
-	apt-get install -y \
+	apt-get install -y --no-install-recommends \
 		git \
 		build-essential \
 		autoconf \
@@ -66,7 +66,6 @@ RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	make && make install && make configs && \
 	rm -rf /usr/src/janus
 
-EXPOSE 8088/tcp 8188/tcp
-EXPOSE 8188/udp 20000-40000/udp
+EXPOSE 8088/tcp 8188/tcp 8188/udp
 
-CMD /var/janus/janus/bin/janus --nat-1-1=${DOCKER_IP}
+CMD ["/var/janus/janus/bin/janus", "--nat-1-1=${DOCKER_IP}"]
