@@ -41,12 +41,12 @@ By default ACL lists for http transport, admin api and websockets are empty and 
 
 ```bash
 docker run -d \
-	-v `pwd`/data:/var/janus/janus/data \
-	-v `pwd`/etc:/var/janus/janus/etc \
-	--network host \
-	-e "DOCKER_IP=<Public IP>" \
-	--restart=unless-stopped \
-	ladamalina/janus-gateway:latest
+    -v `pwd`/data:/var/janus/janus/data \
+    -v `pwd`/etc:/var/janus/janus/etc \
+    --network host \
+    -e "DOCKER_IP=<Public IP>" \
+    --restart=unless-stopped \
+    ladamalina/janus-gateway:latest
 ```
 
 For more detailed instructions on WebRTC configuration please refer to [developer repository](https://github.com/meetecho/janus-gateway#janus-webrtc-server).
