@@ -2,7 +2,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* `latest`, `0.11.8-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.11.8-bullseye/Dockerfile)_
+* `latest`, `0.12.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.12.0-bullseye/Dockerfile)_
+* `0.11.8-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.11.8-bullseye/Dockerfile)_
 * `0.11.7-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.11.7-bullseye/Dockerfile)_
 * `0.11.6-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.11.6-bullseye/Dockerfile)_
 * `0.11.5-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/0.11.5-bullseye/Dockerfile)_
