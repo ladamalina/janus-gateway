@@ -58,9 +58,9 @@ RUN mkdir -p /usr/src/libsrtp && \
 
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
-	wget -c https://github.com/meetecho/janus-gateway/archive/v0.12.2.tar.gz && \
-	tar -xzf v0.12.2.tar.gz && \
-	cd janus-gateway-0.12.2 && \
+	wget -c https://github.com/meetecho/janus-gateway/archive/v1.0.1.tar.gz && \
+	tar -xzf v1.0.1.tar.gz && \
+	cd janus-gateway-1.0.1 && \
 	sh autogen.sh && \
 	./configure --prefix=/var/janus/janus --enable-post-processing --disable-rabbitmq --disable-data-channels --disable-aes-gcm && \
 	make && make install && make configs && \
