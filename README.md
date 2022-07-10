@@ -5,6 +5,7 @@
 * `latest`, `v1.0.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.3-bullseye/Dockerfile)_
 * `v1.0.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.2-bullseye/Dockerfile)_
 * `v0.12.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.12.3-bullseye/Dockerfile)_
+* `v0.11.8-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.11.8-bullseye/Dockerfile)_
 
 ## How to use this image
 
