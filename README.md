@@ -7,6 +7,7 @@
 * `v1.0.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.4-bullseye/Dockerfile)_
 * `v1.0.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.3-bullseye/Dockerfile)_
 * `v1.0.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.2-bullseye/Dockerfile)_
+* `v0.13.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.2-bullseye/Dockerfile)_
 * `v0.13.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.1-bullseye/Dockerfile)_
 * `v0.13.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.0-bullseye/Dockerfile)_
 * `v0.12.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.12.4-bullseye/Dockerfile)_
@@ -24,8 +25,8 @@ You have to pass `DOCKER_IP` env variable and configure STUN server. Otherwise J
 
 You may want to change configuration files or record video meetings mounting it as volumes:
 
-* `/var/janus/janus/etc`,
-* `/var/janus/janus/data`.
+* `/var/janus/janus/etc`
+* `/var/janus/janus/data`
 
 By default ACL lists for http transport, admin api and websockets are empty and Janus does not perform any access control. For production you should configure firewall rules or reverse-proxy access control for ports `8088` and `8188`. Example:
 
