@@ -9,6 +9,7 @@
 * `v1.0.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.4-bullseye/Dockerfile)_
 * `v1.0.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.3-bullseye/Dockerfile)_
 * `v1.0.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.2-bullseye/Dockerfile)_
+* `v0.13.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.4-bullseye/Dockerfile)_
 * `v0.13.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.3-bullseye/Dockerfile)_
 * `v0.13.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.2-bullseye/Dockerfile)_
 * `v0.13.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.1-bullseye/Dockerfile)_
