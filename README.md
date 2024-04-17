@@ -2,7 +2,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* `latest`, `v1.2.1-bookworm` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.1-bookworm/Dockerfile)_
+* `latest`, `v1.2.2-bookworm` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.2-bookworm/Dockerfile)_
+* `v1.2.1-bookworm` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.1-bookworm/Dockerfile)_
 * `v1.2.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.1-bullseye/Dockerfile)_
 * `v1.2.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.0-bullseye/Dockerfile)_
 * `v1.1.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.4-bullseye/Dockerfile)_
