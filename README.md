@@ -2,31 +2,15 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* `latest`, `v1.2.2-bookworm` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.2-bookworm/Dockerfile)_
-* `v1.2.1-bookworm` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.1-bookworm/Dockerfile)_
-* `v1.2.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.1-bullseye/Dockerfile)_
-* `v1.2.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.0-bullseye/Dockerfile)_
-* `v1.1.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.4-bullseye/Dockerfile)_
-* `v1.1.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.3-bullseye/Dockerfile)_
-* `v1.1.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.2-bullseye/Dockerfile)_
-* `v1.1.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.1-bullseye/Dockerfile)_
-* `v1.1.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.0-bullseye/Dockerfile)_
-* `v1.0.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.4-bullseye/Dockerfile)_
-* `v1.0.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.3-bullseye/Dockerfile)_
-* `v1.0.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.2-bullseye/Dockerfile)_
-* `v0.14.2-bookworm` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.2-bookworm/Dockerfile)_
-* `v0.14.1-bookworm` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.1-bookworm/Dockerfile)_
-* `v0.14.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.1-bullseye/Dockerfile)_
-* `v0.14.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.0-bullseye/Dockerfile)_
-* `v0.13.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.4-bullseye/Dockerfile)_
-* `v0.13.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.3-bullseye/Dockerfile)_
-* `v0.13.2-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.2-bullseye/Dockerfile)_
-* `v0.13.1-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.1-bullseye/Dockerfile)_
-* `v0.13.0-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.0-bullseye/Dockerfile)_
-* `v0.12.4-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.12.4-bullseye/Dockerfile)_
-* `v0.12.3-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.12.3-bullseye/Dockerfile)_
-* `v0.11.8-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.11.8-bullseye/Dockerfile)_
-* `v0.10.10-bullseye` _[(Dockerfile)](https://github.com/ladamalina/janus-gateway/blob/master/v0.10.10-bullseye/Dockerfile)_
+* [`latest`](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.2-bookworm/Dockerfile)
+* [`v1.2.2-bookworm`](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.2-bookworm/Dockerfile), [`v1.2.1-bookworm`](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.1-bookworm/Dockerfile), [`v1.2.1-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.1-bullseye/Dockerfile), [`v1.2.0-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.2.0-bullseye/Dockerfile)
+* [`v1.1.4-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.4-bullseye/Dockerfile), [`v1.1.3-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.3-bullseye/Dockerfile), [`v1.1.2-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.2-bullseye/Dockerfile), [`v1.1.1-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.1-bullseye/Dockerfile), [`v1.1.0-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.1.0-bullseye/Dockerfile)
+* [`v1.0.4-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.4-bullseye/Dockerfile), [`v1.0.3-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.3-bullseye/Dockerfile), [`v1.0.2-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v1.0.2-bullseye/Dockerfile)
+* [`v0.14.2-bookworm`](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.2-bookworm/Dockerfile), [`v0.14.1-bookworm`](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.1-bookworm/Dockerfile), [`v0.14.1-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.1-bullseye/Dockerfile), [`v0.14.0-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.14.0-bullseye/Dockerfile)
+* [`v0.13.4-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.4-bullseye/Dockerfile), [`v0.13.3-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.3-bullseye/Dockerfile), [`v0.13.2-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.2-bullseye/Dockerfile), [`v0.13.1-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.1-bullseye/Dockerfile), [`v0.13.0-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.13.0-bullseye/Dockerfile)
+* [`v0.12.4-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.12.4-bullseye/Dockerfile), [`v0.12.3-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.12.3-bullseye/Dockerfile)
+* [`v0.11.8-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.11.8-bullseye/Dockerfile)
+* [`v0.10.10-bullseye`](https://github.com/ladamalina/janus-gateway/blob/master/v0.10.10-bullseye/Dockerfile)
 
 ## How to use this image
 
