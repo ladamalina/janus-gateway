@@ -64,6 +64,6 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         uses: docker/scout-action@v1
         with:
-          command: quickview,cves
+          command: quickview,cves,recommendations
           image: ${{ steps.meta.outputs.tags }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
