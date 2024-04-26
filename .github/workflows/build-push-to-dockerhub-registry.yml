@@ -1,4 +1,4 @@
-name: Publish image to Github Registry
+name: Build & push image to Dockerhub
 on:
   push:
     tags:
@@ -11,10 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@v4
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ladamalina/janus-gateway
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ghcr.io
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
           tag_names: true
