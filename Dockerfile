@@ -1,1 +1,1 @@
-v1.2.2-bookworm/Dockerfile
+v1.2.2-bookworm-slim/Dockerfile
