@@ -1,0 +1,22 @@
+name: Build & push image to Github registry
+on:
+  push:
+    tags:
+      - latest
+      - v0.*
+      - v1.*
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Publish to Registry
+        uses: elgohr/Publish-Docker-Github-Action@v5
+        with:
+          name: ladamalina/janus-gateway
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: ghcr.io
+          tag_names: true
