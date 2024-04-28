@@ -43,18 +43,9 @@ RUN echo "MIRRORSITE=http://archive.ubuntu.com/ubuntu" >> /etc/pbuilderrc && \
 		libavcodec-dev \
 		libavformat-dev \
 		libwebsockets-dev \
-		liblua5.3-dev && \
+		liblua5.3-dev \
+        libsrtp2-dev && \
 	rm -rf /var/lib/apt/lists/*
-
-RUN mkdir -p /usr/src/libsrtp && \
-	cd /usr/src/libsrtp && \
-	wget https://github.com/cisco/libsrtp/archive/v2.3.0.tar.gz && \
-	tar xfv v2.3.0.tar.gz && \
-	cd libsrtp-2.3.0 && \
-	./configure --prefix=/usr --enable-openssl && \
-	make shared_library && \
-	make install && \
-	rm -rf /usr/src/libsrtp
 
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
