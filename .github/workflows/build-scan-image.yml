@@ -43,9 +43,8 @@ jobs:
             type=semver,pattern=v{{version}}
             type=sha,prefix=,suffix=,format=short            
 
-      # Build and push Docker image with Buildx
-      # (don't push on PR, load instead)
-      - name: Build and push Docker image
+      # Build and load Docker image with Buildx (don't push on PR, load instead)
+      - name: Build and load Docker image
         id: build-and-push
         uses: docker/build-push-action@v5
         with:
