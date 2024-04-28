@@ -3,7 +3,8 @@ FROM ubuntu:24.04
 LABEL maintainer="Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>"
 LABEL description="Provides an image with Janus Gateway"
 
-RUN apt-get update && \
+RUN echo "MIRRORSITE=http://archive.ubuntu.com/ubuntu" >> /etc/pbuilderrc && \
+    apt-get update && \
 	apt-get install -y --no-install-recommends \
 		git \
 		build-essential \
