@@ -1,1 +1,1 @@
-v1.2.2-bookworm-slim/Dockerfile
+v1.2.2-ubuntu-24.04/Dockerfile
