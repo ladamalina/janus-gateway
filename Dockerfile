@@ -1,1 +1,1 @@
-v1.2.4/Dockerfile
+v0.15.0/Dockerfile
