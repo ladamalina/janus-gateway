@@ -1,1 +1,1 @@
-./v0.15.2/Dockerfile
+./v1.3.2/Dockerfile
