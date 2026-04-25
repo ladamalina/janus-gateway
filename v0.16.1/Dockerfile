@@ -50,7 +50,7 @@ RUN echo "MIRRORSITE=http://archive.ubuntu.com/ubuntu" >> /etc/pbuilderrc && \
 RUN mkdir -p /usr/src/janus /var/janus/janus/log /var/janus/janus/data && \
 	cd /usr/src/janus && \
 	wget -c https://github.com/meetecho/janus-gateway/archive/v0.16.1.tar.gz && \
-	tar -xzf v0.16.0.tar.gz && \
+	tar -xzf v0.16.1.tar.gz && \
 	cd janus-gateway-0.16.1 && \
 	sh autogen.sh && \
 	./configure --prefix=/var/janus/janus --enable-post-processing --disable-rabbitmq --disable-data-channels --disable-aes-gcm && \
